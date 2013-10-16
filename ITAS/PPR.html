@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>PPR</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link type="text/css" href="css/jquery.cleditor.css" rel="stylesheet" />
+
+    <script type='text/javascript' src="js/jquery2.0.2.js"></script>
+    <script type='text/javascript' src="js/custom.js"></script>
+    <script type='text/javascript' src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/mapping.js"></script>
+
+
+</head>
+
+<body>
+<div id="main_container" class='clear'>
+    <div id="top" class="clear">
+        <img id="logo" src='img/u18_normal.jpg'>
+        <img id="u20_line"  src='img/u20_line.png'>
+            <ul id="userMenu">
+                <li><a id="a1"><img id="b1" src='img/u3_normal.gif'><span>Admin</span></a></li>
+                <li><a id="a2"><img id="b2" src='img/u5_normal.gif'><span>UI Setting</span></a></li>
+                <li><a id="a3"><img id="b3" src='img/u7_normal.gif'><span>UI Setting</span></a></li>
+                <li><a id="a4"><img id="b4" src='img/u9_normal.gif'><span>Log Out</span></a></li>
+            </ul>
+    </div>
+
+    <div id="nav">
+        <ul id="menu">
+            <li><a href="index.html"><img src="img/u39_normal.gif">Home</a></li>
+            <li><a href="REG.html"><img src="img/u77_normal.gif">REG</a></li>
+            <li><a href="RET.html"><img src="img/u50_normal.gif">Return</a></li>
+            <li class="active"><a href="PPR.html"><img src="img/u53_normal.gif">Payment</a></li>
+            <li><a href="About.html"><img src="img/u77_normal.gif">TAC</a></li>
+            <li><a href="About.html"><img src="img/u47_normal.png">RAC</a></li>
+            <li><a href="About.html"><img src="img/u50_normal.gif">Audit</a></li>
+            <li><a href="About.html"><img src="img/u53_normal.gif">compliance</a></li>
+            <li><a href="About.html"><img src="img/u56_normal.png">CAM</a></li>
+            <li><a href="About.html"><img src="img/u59_normal.png">BRM</a></li>
+            <li><a href="About.html"><img src="img/u62_normal.png">ECM</a></li>
+            <li><a href="About.html"><img src="img/u65_normal.gif">BI</a></li>
+            <li><a href="About.html"><img src="img/u68_normal.gif">CRM</a></li>
+            <li><a href="About.html"><img src="img/u71_normal.gif">LES</a></li>
+            <li><a href="About.html"><img src="img/u74_normal.gif">Configuration</a></li>
+        </ul>
+    </div>
+
+    <div id="primary_left">
+        <div id="bgwrap">
+            <div id="tree"> <!-- navigation menu -->
+                <div id="menuLogo">
+                    <h2>Menu</h2>
+                </div> <!-- logo end -->
+                <ul>
+                    <li class="current"><a href="#" id="f1"><span class="current" >Payment Office Management</span></a></li>
+                    <li class="tooltip" title="Setting your password here" id="f2"><a href="#"><span>Till Management</span></a></li>
+                    <li class="tooltip" title="check your result here" id="f3"><a href="#"><span >Payment Management</span></a>
+                        <ul>
+                            <li ><a href="#" id="f31">Payment Capture</a></li>
+                            <li title="check your result here" ><a href="#" id="f32">Payment Cancelation</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="tooltip" title="Setting your password here" id="f4"><a href="#"><span>Deposit Management</span></a></li>
+                    <li class="tooltip" title="Exit system here" id="f5"><a href="#"><span>Inquiry</span></a></li>
+                    <li class="tooltip" title="Exit system here" id="f6"><a href="#"><span>Report</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="primary_right">
+        <div class="inner">
+            <div id="content">
+                <iframe id="mainFrame"  src="prototype/Reopen_Till.html"></iframe>
+                <div id="console">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---->
+
+</div>
+</body>

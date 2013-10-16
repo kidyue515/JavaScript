@@ -1,0 +1,309 @@
+/*--------- 1 Initializing -----------*/
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+body { margin: 0 30px;}
+
+/* --- 2 Layout --- */
+
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+
+#top {
+    position:relative;
+    background-color: #2B416A;
+    height: 61px;
+    width: 100%;
+}
+
+#primary_left {
+    float: left;
+    /* border: solid #bcd5e6 1px;*/
+    overflow: hidden;
+    width:211px;
+
+}
+
+#primary_right {
+    float:right;
+    width:100%;
+    margin-left:-211px;
+    overflow: hidden;
+    background-color: #E4E4E4;
+}
+
+#primary_right .inner {
+    margin-left:211px;
+    width: 100%;
+    overflow: hidden;
+    position:relative;
+}
+
+/*--------- Navigator -----------*/
+
+#menu {position:relative; width:100%;overflow:hidden;margin-top:2px; height: 33px; background:url(../img/u34_normal.jpg) top repeat-x;}
+#menu li {float:left}
+#n1 {margin-left: 20px;}
+#menu li img { float:left; display:inline; padding: 4px; border: 0;}
+
+#menu a {padding-left:5px; padding-right:5px; display:block;font-weight:400;background:url(../img/u34_normal.jpg) top repeat-x;line-height:33px;text-decoration:none; font-family: Arial; font-size: 13px; color:#000000;}
+#menu a:hover, #tree #menu_active a {color:#fff;background:url(../img/u42_normal.jpg) top repeat-x; font-family: Arial; font-size: 13px;}
+#menu li.active a {color:#fff;background:url(../img/u42_normal.jpg) top repeat-x; font-family: Arial; font-size: 13px;}
+li {list-style: none;}
+
+/*--------- Top -----------*/
+image {margin: 0; padding: 0; }
+
+#logo {position:absolute;}
+
+#u20_line {
+    position: absolute;
+    top:57px;
+    width: 100%;
+}
+
+#userMenu {
+    display:block;
+    margin-top: 10px;
+    float:right;
+}
+
+#userMenu li{
+    display: block;
+    float: left;
+    margin-right: 12px;
+
+}
+
+
+
+#userMenu a {
+    float: left;
+    font-family:Arial;
+    font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FFFFFF;
+}
+
+#userMenu span {
+    float: right;
+    display:block;
+    margin-top: 9px;
+}
+
+/* Left area presentation */
+
+
+
+#primary_left #menuLogo {
+    clear:both;
+    float:left;
+    width:211px;
+    height:50px;
+    overflow:hidden;
+}
+
+#primary_left #menuLogo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#c0c0c0 ;
+    line-height: 40px;
+    padding: 5px 10px;
+}
+
+/* --- Tree --- */
+
+#tree ul {
+    list-style-type:none;
+}
+
+#tree ul li {
+    clear:both;
+    float:left;
+    background:url('../img/Primary_left/menu_spacer.png') 0 100% no-repeat;
+    width:211px;
+    padding:1px 0;
+}
+
+#tree ul li.nobg {
+    background:none;
+}
+
+#tree ul li a {
+    clear:both;
+    float:left;
+    text-decoration:none;
+    color:#bbb;
+    font-family:Arial, Helvetica, sans-serif;
+    height:40px;
+    font-size:12px;
+
+    text-align: left;
+    margin-left: 15px;
+    text-shadow:3px 3px #000;
+
+}
+
+#tree ul li ul li a {
+
+}
+
+
+
+#tree ul li a span {
+    /*text-transform:uppercase;*/
+    font-size:13px;
+    text-shadow:1px 1px #000;
+    float:left;
+    width:211px;
+    line-height: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#tree ul li.current a span {
+
+    color:#fff;
+
+    text-shadow:#0A5482 1px 1px 0;
+}
+
+#tree ul li.current a span {
+
+}
+
+#tree ul li a:hover span {
+    color:#fff;
+}
+
+#tree ul li.current a {
+    /*padding-left:43px;*/
+}
+
+#tree ul li.current {
+    background:url('../img/Primary_left/menu_current.png') top left no-repeat;
+}
+
+#tree ul li.current li a {
+
+}
+
+#tree ul ul {
+    clear:both;
+    float:left;
+    width:175px;
+    display:inline;
+
+}
+
+#tree ul ul li {
+
+}
+
+#tree ul ul li, #tree ul ul li a {
+    background:none;
+    height:auto!important;
+    font-size:11px;
+
+}
+
+#tree ul ul li a {
+    display:inline;
+    clear:both;
+    float:left;
+    width:140px;
+    padding:5px 30px;
+    text-shadow:1px 1px #000!important;
+    line-height: 20px;
+}
+
+#tree ul ul li a:hover {
+    color:#fff;
+}
+
+#bgwrap {
+    clear: both;
+    float:left;
+    position:relative;
+    width:100%;
+    height: 100%;
+    background:url('../img/Primary_left/stripe.png')  0 0 repeat-y;
+}
+
+
+
+/* --- Main Content Area --- */
+#content {
+    margin:20px; width: 1056px;
+}
+
+#mainFrame {width:1056px; height:520px; border: 0; margin: 0 auto; }
+
+#content #console {width: 100%;  position: relative;  }
+
+.clear {clear: both;}
+
+#content #console #button1, #button2 {margin-left: 25%;}
+
+
+
+
+a.button_link, input[type="submit"], input[type="reset"], .ui-dialog .ui-dialog-buttonpane button {
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    text-shadow:0 1px 1px #0c507b;
+    letter-spacing:0;
+    text-transform:uppercase;
+    padding:5px 20px;
+    margin: 5px 10px;
+    background: #3aa3e6;
+    background: -moz-linear-gradient(top, #87c6ee, #3aa3e6 2%, #028fe8);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #87c6ee), color-stop(.01, #3aa3e6), to(#028fe8));
+
+    border:1px solid #0082d5;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+
+
+
+    text-align: center;
+}
+
+a.button_link:hover, input[type="submit"]:hover, input[type="reset"]:hover, .ui-dialog-buttonpane button:hover {
+    text-shadow: 0 1px 1px #6f3a02;
+
+    border:1px solid #e6791c;
+    border-bottom:1px solid #d86f15;
+
+    background: #f48423;
+    background: -moz-linear-gradient(top, #ffdf9e, #f5b026 2%, #f48423);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffd683), color-stop(.01, #f5b026), to(#f48423));
+
+    cursor:pointer;
+
+}
+
+/*--- Responsble---for 1366*768 1280*800 1024*768 screen*/
+
+@media screen and (max-width : 1260px) {
+    body {margin: 0}
+    #primary_right {margin: 0;}
+    #primary_right .inner {margin: 0;}
+    #content {
+        margin: 20px auto;
+    }
+}
+
+
+@media screen and (min-width : 1260px) and (max-width:1330px){
+    body {margin: 0}
+}
+
+@media screen and (min-width: 1024px) and (max-width:1280px) {
+
+}
+
